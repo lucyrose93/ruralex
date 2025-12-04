@@ -1,37 +1,364 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>GETTING STARTED WITH BRACKETS</title>
-    <meta name="description" content="An interactive getting started guide for Brackets.">
-    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8" />
+    <title>RURALEX – Knowledge in Crisis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
+<body id="top">
+    <div class="page">
+        <!-- ===== Header ===== -->
+        <header>
+            <div class="container nav">
+                <div class="nav-left">
+                    <div class="nav-logo" aria-hidden="true">
+                        <!-- Make sure this file exists in the same folder -->
+                        <a href="#">
+                            <img src="./imgs/logo-cropped.png" alt="RURALEX logo">
+                        </a>
+                    </div>
+                    <div class="nav-text">
+                    </div>
+                </div>
 
-    <h1>RURALEX: Knowledge in Crisis</h1>
-    <h2>The dynamics of evironmental expertise amidst rural change</h2>
+                <!-- Hamburger button (visible at <= 1200px) -->
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
 
-    <p>RURALEX is a three-year research project that studies the cumulative crisis of environmental expertise across Europe’s rural areas. Funded by HERA-CHANSE, we are a team of 17 researchers investigating how shifts in people’s knowledge about the environment shape social, cultural, and ecological challenges facing local communities today.</p>
-    <p>Across Europe, rural regions are undergoing major transformations. Population decline, urban migration, and the loss of traditional agricultural practices have disrupted long-standing relationships between people and their environments. This is leading to many forms of ecological know-how transforming, fading, and being generated. Our research spans diverse sites, from the Spanish Pyrenees to southeastern England, from the Bulgarian Danube basin to the northern cost of Norway. Using long-term ethnographic and archival methods, we document how environmental knowledge evolves across generations and landscapes. We also develop innovative tools to capture stories, sounds, and images that reflect how people relate to their environments. We hope to show how better understanding local knowledge can help address Europe’s pressing ecological and social challenges — and why the humanities are essential to understanding our shared future.
-    </p>
-    <p>Across Europe, rural regions are undergoing major transformations. Population decline, urban migration, and the loss of traditional agricultural practices have disrupted long-standing relationships between people and their environments. This is leading to many forms of ecological know-how transforming, fading, and being generated. Our research spans diverse sites, from the Spanish Pyrenees to southeastern England, from the Bulgarian Danube basin to the northern cost of Norway. Using long-term ethnographic and archival methods, we document how environmental knowledge evolves across generations and landscapes. We also develop innovative tools to capture stories, sounds, and images that reflect how people relate to their environments. We hope to show how better understanding local knowledge can help address Europe’s pressing ecological and social challenges — and why the humanities are essential to understanding our shared future.</p>
-    <p>Old paths in the soil,<br>
-        knowledge drifting with the wind<br>
-        crises call, listen<br></p>
-    <p>Where authority<br>
-        once grew from hands in the earth,<br>
-        data feels lonely.</p>
-    <p>Methods dance in turn:<br>
-        sound, map, archive, fieldnotes<br>
-        we gather the threads.</p>
-    <p>If this stirs your mind,<br>
-        or tempts a mischievous thought<br>
-        <a href="mailto:roger.norum@oulu.fi?cc=ls763@sussex.ac.uk, alicee@sussex.ac.uk">send us an email.</a></p>
-    
-    <footer>Website under construction. Funded by HERA-CHANSE.</footer>
+                <nav aria-label="Main navigation">
+                    <ul id="primary-nav" class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#case-studies">Case studies</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- ===== Hero / Intro ===== -->
+        <main>
+            <section class="hero">
+                <div class="container hero-layout">
+                    <div>
+                        <div class="hero-tagline">RURALEX: Knowledge in Crisis</div>
+                        <h1 class="hero-title">The dynamics of evironmental expertise amidst rural change</h1>
+                        <p class="hero-lede">
+                            RURALEX is a three-year research project that studies the cumulative crisis of environmental expertise across Europe’s rural areas. We are a team of researchers and practitioners investigating how shifts in people’s knowledge about the environment shape social, cultural, and ecological challenges facing local communities today.
+                        </p>
+                        <div class="hero-meta">
+                            Funded by HERA-CHANSE.
+                        </div>
+                    </div>
+                    <div class="hero-visual" aria-hidden="true">
+                        <img src="imgs/coppice-sabin.jpeg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== About ===== -->
+            <section id="about">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-kicker">About</div>
+                        <h2 class="section-title">What is RURALEX?</h2>
+                        <p class="section-subtitle">
+                            A collaborative project investigating contemporary rural experiences, infrastructures
+                            and narratives through situated research.
+                        </p>
+                    </div>
+
+                    <div class="grid">
+                        <div class="about-text">
+                            <p>
+                                Across Europe, rural regions are undergoing major transformations. Population decline, urban migration, and the loss of traditional agricultural practices have disrupted long-standing relationships between people and their environments. This is leading to many forms of ecological know-how transforming, fading, and being generated. Our research spans diverse sites, from the Spanish Pyrenees to southeastern England, from the Bulgarian Danube basin to the northern cost of Norway. Using long-term ethnographic and archival methods, we document how environmental knowledge evolves across generations and landscapes. We also develop innovative tools to capture stories, sounds, and images that reflect how people relate to their environments. We hope to show how better understanding local knowledge can help address Europe’s pressing ecological and social challenges — and why the humanities are essential to understanding our shared future.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== Case Studies ===== -->
+            <section id="case-studies">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-kicker">Case studies</div>
+                        <h2 class="section-title">Sites of inquiry</h2>
+
+                    </div>
+
+                    <div class="case-grid">
+                        <article class="case-card">
+                            <h3 class="case-title">Catalan Pyrenees</h3>
+                            <div class="case-location">Northeast Spain</div>
+                            <p class="case-description">
+                                Bureaucratic forest management marginalizes traditional knowledge. As climate change raises the threat of megafires, this project uses ethnographic fieldwork to explore and identify alternative ways to build fire-resilient landscapes and communities.
+                            </p>
+                            <div class="case-link">
+                                <a href="./template.html">Read more →</a>
+                            </div>
+                        </article>
+
+                        <article class="case-card">
+                            <h3 class="case-title">Nucet fishery, Lower Danube</h3>
+                            <div class="case-location">The Danube Delta, Romania</div>
+                            <p class="case-description">
+                                Socialist Romania and Bulgaria introduced Asian carp as a protein source. It escaped into the Danube, becoming an invasive species. We examine fish reproduction and infrastructure, tracking how neoliberal reforms reshape interspecies relations. </p>
+                            <div class="case-link">
+                                <a href="./template.html">Read more →</a>
+                            </div>
+                        </article>
+
+                        <article class="case-card">
+                            <h3 class="case-title">Mallorca</h3>
+                            <div class="case-location">Balearic Islands, Spain</div>
+                            <p class="case-description">
+                                Agricultural and environmental practices in Mallorca are changing and so are broader political and social debates. This case study explores resilience and adaptation in labour, trade, and livelihoods, while documenting past agricultural systems and landscapes.
+                            </p>
+                            <div class="case-link">
+                                <a href="./template.html">Read more →</a>
+                            </div>
+                        </article>
+
+                        <article class="case-card">
+                            <h3 class="case-title">Trentino Province</h3>
+                            <div class="case-location">Italy</div>
+                            <p class="case-description">
+                                Abandonment of traditional agriculture, depopulation, and rewilding have turned the landscape into a site of political contention. These transformations spark conflict as local actors negotiate shifting land use and identities.
+                            </p>
+                            <div class="case-link">
+                                <a href="./template.html">Read more →</a>
+                            </div>
+                        </article>
+
+                        <article class="case-card">
+                            <h3 class="case-title">Matsalu National Park</h3>
+                            <div class="case-location">Estonia</div>
+                            <p class="case-description">
+                                Reed beds and flooded meadows along the Kasari River support major Arctic bird migration and foster artisanal innovations. Biodiversity conservation, cultural tradition, and economic viability are negotiated, revealing tensions and adaptations in managing this distinctive landscape and its livelihoods.
+                            </p>
+                            <div class="case-link">
+                                <a href="./template.html">Read more →</a>
+                            </div>
+                        </article>
+
+                        <article class="case-card">
+                            <h3 class="case-title">Rewilding in Sussex</h3>
+                            <div class="case-location">Southern UK</div>
+                            <p class="case-description">
+                                 At Knepp, grazing and beaver reintroduction are shaping new wetlands, raising questions about how social values guide future licensing. At Railway Land Wildlife Trust, Lewes, chalk stream restoration created biodiverse wetlands and fosters ecocentric cultures.
+                            </p>
+                            <div class="case-link">
+                                <a href="./template.html">Read more →</a>
+                            </div>
+                        </article>
+
+                        <article class="case-card">
+                            <h3 class="case-title">Case study topic area</h3>
+                            <div class="case-location">Regional location</div>
+                            <p class="case-description">
+                                Short description of context under 50 words, avoiding phrases like "we examine..."
+                            </p>
+                            <div class="case-link">
+                                <a href="./template.html">Read more →</a>
+                            </div>
+                        </article>
+
+                        <article class="case-card">
+                            <h3 class="case-title">Case study topic area</h3>
+                            <div class="case-location">Regional location</div>
+                            <p class="case-description">
+                                Short description of context under 50 words, avoiding phrases like "we examine..."
+                            </p>
+                            <div class="case-link">
+                                <a href="./template.html">Read more →</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== Team ===== -->
+            <section id="team">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-kicker">Team</div>
+                        <h2 class="section-title">Humans involved</h2>
+                        <p class="section-subtitle">
+                            Core project team and collaborators.
+                        </p>
+                    </div>
+
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="team-name">Roger Norum, Project Lead</div>
+                            <div class="team-role">Cultural Anthropology</div>
+                            <div class="team-affiliation">University of Oulu</div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-name">Alice Eldridge</div>
+                            <div class="team-role">Sonic Systems</div>
+                            <div class="team-affiliation">University of Sussex</div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-name">Camila del Mármol</div>
+                            <div class="team-role">Social and Cultural Anthropology</div>
+                            <div class="team-affiliation">University of Barcelona</div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-name">Stefan Dorondel</div>
+                            <div class="team-role">Institute of Anthropology Bucharest</div>
+                            <div class="team-affiliation">Romanian Academy of Sciences</div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-name">Alessandro Rippa</div>
+                            <div class="team-role">Department of Social Anthropology</div>
+                            <div class="team-affiliation">University of Oslo</div>
+                        </div>
+                        <!-- 9 more placeholders -->
+                        <div class="team-member">
+                            <div class="team-name">Kadri Tüür</div>
+                            <div class="team-role">Institute of Semiotics and Philosophy</div>
+                            <div class="team-affiliation">University of Tartu</div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-name">Stelu Serban</div>
+                            <div class="team-role">Institute for South East European Studies</div>
+                            <div class="team-affiliation">Romanian Academy of Sciences</div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-name">Lucy Sabin</div>
+                            <div class="team-role">Digital Humanities Lab</div>
+                            <div class="team-affiliation">University of Sussex</div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-name">Svetoslava Toncheva</div>
+                            <div class="team-role">Institute for South East European Studies</div>
+                            <div class="team-affiliation">Romanian Academy of Sciences</div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-name">Alejandro Reig</div>
+                            <div class="team-role">Anthropology</div>
+                            <div class="team-affiliation">University of Oulu</div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-name">Ferran Pons-Raga</div>
+                            <div class="team-role">Anthropology</div>
+                            <div class="team-affiliation">University of Barcelona</div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-name">Silvia Lotman</div>
+                            <div class="team-role">School of Humanities</div>
+                            <div class="team-affiliation">Tallinn University</div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-name">Neal Cahoon</div>
+                            <div class="team-role">Researcher-Practitioner</div>
+                            <div class="team-affiliation">University of Oulu</div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-name">Carolin Maertens</div>
+                            <div class="team-role">Department of Social Anthropology</div>
+                            <div class="team-affiliation">University of Oslo</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== News ===== -->
+            <section id="news">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-kicker">News</div>
+                        <h2 class="section-title">Updates from the project</h2>
+                    </div>
+                </div>
+
+                <div class="news-list">
+                    <article class="news-post">
+                        <div class="news-meta">May 2025 · Fieldwork</div>
+                        <h3 class="news-title">New case study launched in coastal Norway</h3>
+                        <p class="news-excerpt">
+                            The RURALEX team has begun a new phase of fieldwork in a northern fishing village,
+                            focusing on seasonal work, tourism and changing marine environments. Interviews,
+                            recordings and visual material will be added to the site over the coming months. [under construction]
+                        </p>
+                        <div class="news-link">
+                            <a href="./template.html">Read more →</a>
+                        </div>
+                    </article>
+
+                    <article class="news-post">
+                        <div class="news-meta">March 2026 · Workshop</div>
+                        <h3 class="news-title">Listening workshop [under construction]</h3>
+                        <p class="news-excerpt">
+                            Local residents, artists and researchers gathered for a three-day workshop on media,
+                            archives and sound in forest settlements. [under construction]
+                        </p>
+                        <div class="news-link">
+                            <a href="./template.html">View programme &amp; materials →</a>
+                        </div>
+                    </article>
+
+                    <article class="news-post">
+                        <div class="news-meta">January 2026 · Publication</div>
+                        <h3 class="news-title">Forthcoming article [under construction]</h3>
+                        <p class="news-excerpt">
+                            A co-authored article drawing on RURALEX case studies will appear in an open-access
+                            journal later this year. [under construction]
+                        </p>
+                        <div class="news-link">
+                            <a href="./template.html">Publication details to follow →</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- ===== Contact ===== -->
+            <section id="contact">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-kicker">Contact</div>
+                        <h2 class="section-title">Connect with our team</h2>
+                        <p class="section-subtitle">
+                            For general inquiries about the project, collaborations, press or access to materials,
+                            please <a href="mailto:roger.norum@oulu.fi">contact the team</a>.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ===== Footer ===== -->
+        <footer>
+            <div class="container footer-inner">
+                <div>© <span id="year"></span> RURALEX</div>
+                <div><a href="#top">Back to top ↑</a></div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Footer year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Hamburger toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const primaryNav = document.getElementById('primary-nav');
+
+        navToggle.addEventListener('click', () => {
+            const isOpen = primaryNav.classList.toggle('nav-open');
+            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+    </script>
 </body>
 
 </html>
