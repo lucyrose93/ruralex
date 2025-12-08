@@ -105,6 +105,15 @@ section {
     }
 }
 
+.two-columns {
+    column-count: 2;
+    gap: 4.5rem;
+}
+
+.justify {
+        text-align: justify;
+}
+
 /* ===== Header / Nav ===== */
 
 header {
@@ -292,12 +301,6 @@ header {
     color: var(--text);
     display: grid;
     gap: 1rem;
-}
-
-.two-columns {
-    column-count: 2;
-    gap: 4.5rem;
-    text-align: justify;
 }
 
 /* ===== Case Studies ===== */
