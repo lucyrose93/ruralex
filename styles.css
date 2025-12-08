@@ -396,13 +396,13 @@ header {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    align-items: center;
+    align-items: left;
 }
 
 .news-post {
     border: 1px solid var(--border);
     padding: 1.5rem;
-    width: 80%;
+    width: 100%;
     max-width: 1600px;
     background: #ffffff;
 }
