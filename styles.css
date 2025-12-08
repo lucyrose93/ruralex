@@ -181,8 +181,8 @@ header {
     .nav-links {
         display: flex;
         flex-wrap: wrap;
-        gap: 1rem;
-        font-size: 0.9rem;
+        gap: 2rem;
+        font-size: 1rem;
     }
 
     .nav-links li a {
@@ -221,8 +221,8 @@ header {
 
     .nav-links li a {
         display: block;
-        padding: 0.6rem 0;
-        font-size: 0.9rem;
+        padding: 0.9rem 0.8rem;
+        font-size: 1.2rem;
     }
 
     .nav-links.nav-open {
@@ -289,18 +289,15 @@ header {
 /* ===== About ===== */
 
 .about-text {
-    font-size: 0.95rem;
     color: var(--text);
     display: grid;
     gap: 1rem;
 }
 
-.about-highlight {
-    padding: 1rem;
-    border: 1px solid var(--border);
-    background: #f7fbfc;
-    font-size: 0.92rem;
-    color: var(--muted);
+.two-columns {
+    column-count: 2;
+    gap: 4.5rem;
+    text-align: justify;
 }
 
 /* ===== Case Studies ===== */
@@ -333,7 +330,6 @@ header {
 
 .case-title {
     font-weight: 600;
-    font-size: 0.98rem;
 }
 
 .case-location {
