@@ -105,6 +105,20 @@
         </footer>
 
     </div>
+    
+     <script>
+        // Footer year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Hamburger toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const primaryNav = document.getElementById('primary-nav');
+
+        navToggle.addEventListener('click', () => {
+            const isOpen = primaryNav.classList.toggle('nav-open');
+            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+    </script>
 </body>
 
 </html>

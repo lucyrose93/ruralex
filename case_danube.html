@@ -70,22 +70,22 @@
                     <article class="post-body" aria-label="Blog post content">
                         <h2>Overview</h2>
                         <p>
-                            Our team investigates the introduction of Asian carp in Southeast Europe, particularly in Romania and Bulgaria, during the socialist regime, viewing it as a political economy project designed to provide the population with affordable protein. This project seeks to understand how this socialist initiative evolved into an invasive species issue in the post-socialist period, when Asian carp escaped into the Danube River. We specifically examine the technologies of fish reproduction, the expanding socialist expertise in fisheries, and the new infrastructure implemented to acclimatize Asian carp. Additionally, we document the neoliberal transformations and their impacts on infrastructure, technologies, and expertise, as well as their effects on both fish and humans. 
+                            Our team investigates the introduction of Asian carp in Southeast Europe, particularly in Romania and Bulgaria, during the socialist regime, viewing it as a political economy project designed to provide the population with affordable protein. This project seeks to understand how this socialist initiative evolved into an invasive species issue in the post-socialist period, when Asian carp escaped into the Danube River. We specifically examine the technologies of fish reproduction, the expanding socialist expertise in fisheries, and the new infrastructure implemented to acclimatize Asian carp. Additionally, we document the neoliberal transformations and their impacts on infrastructure, technologies, and expertise, as well as their effects on both fish and humans.
                         </p>
                         <h2>Local partners and communities</h2>
                         <p>
-                            We are collaborating with a team of biologists from the Grigore Antipa National Museum of Natural History in Bucharest. Together, we will conduct fieldwork and publish our findings, engaging in an interdisciplinary analysis that combines environmental history, social anthropology, and biology. Our objective is to understand the introduction of Asian carp, its transformation into an invasive species, and its impact on both human and nonhuman communities. 
+                            We are collaborating with a team of biologists from the Grigore Antipa National Museum of Natural History in Bucharest. Together, we will conduct fieldwork and publish our findings, engaging in an interdisciplinary analysis that combines environmental history, social anthropology, and biology. Our objective is to understand the introduction of Asian carp, its transformation into an invasive species, and its impact on both human and nonhuman communities.
                         </p>
-                        
+
                         <figure class="post-hero-media">
-                        <!-- add link to image file and alt text below -->
-                        <img class="news-main-img" src="/imgs/danube-stelu.jpg" alt="an empty concrete bath or small reservoir dug into ground" loading="lazy">
-                        <figcaption>Fieldwork photography, Stelu Serban.</figcaption>
-                    </figure>
-                        
+                            <!-- add link to image file and alt text below -->
+                            <img class="news-main-img" src="/imgs/danube-stelu.jpg" alt="an empty concrete bath or small reservoir dug into ground" loading="lazy">
+                            <figcaption>Fieldwork photography, Stelu Serban.</figcaption>
+                        </figure>
+
                         <h2>Extended description</h2>
                         <p>
-                            Our team investigates the introduction of Asian carp in Southeast Europe, particularly in Romania and Bulgaria, during the socialist regime, viewing it as a political economy project designed to provide the population with affordable protein. The rationale for introducing non-native carp species such as Ctenopharyngodon idella (grass carp), Hypophthalmichthys nobilis (bighead carp), and Hypophthalmichthys molitrix (silver carp) was twofold: to biologically control water weeds in backwaters, lakes, and reservoirs, and their low feeding requirements made them a cost-effective choice. This project seeks to understand how this socialist initiative evolved into an invasive species issue in the post-socialist period, when Asian carp escaped into the Danube River. We specifically examine the technologies of fish reproduction, the expanding socialist expertise in fisheries, and the new infrastructure implemented to acclimatise Asian carp. Additionally, we document the neoliberal transformations and their impacts on infrastructure, technologies, and expertise, as well as their effects on both fish and humans. Our study further underscores the complex and unexpected socio-political and economic dynamics inherent in invasive ecologies by showing that some of these Asian carp harboured parasitic larvae of Sinanodonta woodiana (Chinese pond mussel) on their gills. These larvae matured into adult mussels within fish hatcheries and gradually established wild populations outside their artificial confines. From there, they have spread through the Danube and throughout European waters. The story of Sinanodonta woodiana transcends mere biological globalisation; it reflects how global trade, industrial farming practices, and shifting climatic conditions can create pathways for species to cross borders and transform ecosystems. This case study serves as a reminder that what may initially appear as an unintentional consequence of economic or political decisions—such as importing fish to enhance food production—can trigger ecological repercussions that persist for generations. 
+                            Our team investigates the introduction of Asian carp in Southeast Europe, particularly in Romania and Bulgaria, during the socialist regime, viewing it as a political economy project designed to provide the population with affordable protein. The rationale for introducing non-native carp species such as Ctenopharyngodon idella (grass carp), Hypophthalmichthys nobilis (bighead carp), and Hypophthalmichthys molitrix (silver carp) was twofold: to biologically control water weeds in backwaters, lakes, and reservoirs, and their low feeding requirements made them a cost-effective choice. This project seeks to understand how this socialist initiative evolved into an invasive species issue in the post-socialist period, when Asian carp escaped into the Danube River. We specifically examine the technologies of fish reproduction, the expanding socialist expertise in fisheries, and the new infrastructure implemented to acclimatise Asian carp. Additionally, we document the neoliberal transformations and their impacts on infrastructure, technologies, and expertise, as well as their effects on both fish and humans. Our study further underscores the complex and unexpected socio-political and economic dynamics inherent in invasive ecologies by showing that some of these Asian carp harboured parasitic larvae of Sinanodonta woodiana (Chinese pond mussel) on their gills. These larvae matured into adult mussels within fish hatcheries and gradually established wild populations outside their artificial confines. From there, they have spread through the Danube and throughout European waters. The story of Sinanodonta woodiana transcends mere biological globalisation; it reflects how global trade, industrial farming practices, and shifting climatic conditions can create pathways for species to cross borders and transform ecosystems. This case study serves as a reminder that what may initially appear as an unintentional consequence of economic or political decisions—such as importing fish to enhance food production—can trigger ecological repercussions that persist for generations.
                         </p>
 
                         <h3>Keywords</h3>
@@ -95,7 +95,7 @@
                         </p>
                     </article>
 
-                  
+
                 </div>
             </section>
         </main>
@@ -108,6 +108,18 @@
         </footer>
 
     </div>
-</body>
 
-</html>
+    <script>
+        // Footer year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Hamburger toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const primaryNav = document.getElementById('primary-nav');
+
+        navToggle.addEventListener('click', () => {
+            const isOpen = primaryNav.classList.toggle('nav-open');
+            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+    </script>
+</body></html>
