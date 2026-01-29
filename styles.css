@@ -105,7 +105,7 @@ section {
     }
 }
 
-.two-columns {
+.responsive-columns {
     column-count: 2;
     gap: 4.5rem;
 }
@@ -307,6 +307,11 @@ header {
     color: var(--text);
     display: grid;
     gap: 1rem;
+}
+@media (max-width: 900px) {
+    .responsive-columns {
+        column-count: 1;
+    }
 }
 
 /* ===== Case Studies ===== */
