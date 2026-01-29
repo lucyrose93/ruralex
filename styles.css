@@ -111,7 +111,7 @@ section {
 }
 
 .justify {
-        text-align: justify;
+    text-align: justify;
 }
 
 /* ===== Header / Nav ===== */
@@ -241,8 +241,10 @@ header {
 
 /* ===== Hero ===== */
 
+
 .hero {
     padding: 3.5rem 0 3rem;
+    background-color: #1e5f69;
 }
 
 .hero-layout {
@@ -263,10 +265,12 @@ header {
     line-height: 1.2;
     margin-bottom: 1.6rem;
     font-weight: 300;
+    color: floralwhite;
 }
 
 .hero-lede {
-    color: var(--muted);
+    /*    color: var(--muted);*/
+    color: floralwhite;
     font-size: 1rem;
     max-width: 34rem;
     margin-bottom: 1rem;
@@ -277,14 +281,16 @@ header {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 0.8rem;
-    color: var(--c2);
+    /*    color: var(--c2);*/
+    color: #cde8eb;
     margin-bottom: 0.4rem;
 }
 
 .hero-meta {
     margin-top: 1.2rem;
     font-size: 0.9rem;
-    color: var(--muted);
+    /*    color: var(--muted);*/
+    color: #cde8eb;
     border-left: 3px solid var(--c3);
     padding-left: 0.8rem;
 }
@@ -428,19 +434,21 @@ header {
     font-size: 0.86rem;
 }
 
-    .news-main-img {
-            padding-top: 0.5rem;
-        width: 75%;
+.news-main-img {
+    padding-top: 0.5rem;
+    width: 75%;
 }
 
 @media (max-width: 768px) {
     .news-post {
         width: 90%;
     }
+
     .news-main-img {
-    width: 100%;
+        width: 100%;
+    }
 }
-}
+
 .post-body-section {
     padding-top: 1.4rem;
 }
@@ -448,15 +456,26 @@ header {
 .post-hero {
     padding-bottom: 0;
 }
-.post-body h2, .post-body h3 {
+
+.post-body h2,
+.post-body h3 {
     padding-top: 1rem;
 }
+
 .post-body ul {
     margin-left: 1rem;
 }
+
 .post-body p {
     padding-bottom: 0.6rem;
 }
+
+/* ===== Contact ==== */
+
+#contact {
+    background-color: #cde8eb;
+}
+
 /* ===== Footer ===== */
 
 footer {
