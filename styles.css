@@ -316,6 +316,10 @@ header {
 
 /* ===== Case Studies ===== */
 
+#case-studies {
+    background-color: #cde8eb;
+}
+
 .case-grid {
     display: grid;
     gap: 1.5rem;
@@ -334,7 +338,6 @@ header {
 }
 
 .case-card {
-    border: 1px solid var(--border);
     padding: 1rem;
     display: flex;
     flex-direction: column;
