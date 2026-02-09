@@ -84,6 +84,7 @@ section {
 .section-subtitle {
     color: var(--muted);
     font-size: 0.95rem;
+    width: 45%;
 }
 
 .grid {
@@ -311,6 +312,9 @@ header {
 @media (max-width: 900px) {
     .responsive-columns {
         column-count: 1;
+    }
+    .section-subtitle {
+        width: 100%;
     }
 }
 
