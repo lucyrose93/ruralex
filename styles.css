@@ -418,6 +418,10 @@ header {
 
 /* ===== News ===== */
 
+#news {
+    background-color: #cde8eb;
+}
+
 .news-list {
     display: flex;
     flex-direction: column;
@@ -493,9 +497,11 @@ header {
 
 /* ===== Contact ==== */
 
+/*
 #contact {
     background-color: #cde8eb;
 }
+*/
 
 /* ===== Footer ===== */
 
