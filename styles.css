@@ -246,6 +246,7 @@ header {
 .hero {
     padding: 3.5rem 0 3rem;
     background-color: #1e5f69;
+
 }
 
 .hero-layout {
@@ -270,7 +271,7 @@ header {
 }
 
 .hero-lede {
-    /*    color: var(--muted);*/
+    /*        color: var(--muted);*/
     color: floralwhite;
     font-size: 1rem;
     max-width: 34rem;
@@ -309,10 +310,12 @@ header {
     display: grid;
     gap: 1rem;
 }
+
 @media (max-width: 900px) {
     .responsive-columns {
         column-count: 1;
     }
+
     .section-subtitle {
         width: 100%;
     }
