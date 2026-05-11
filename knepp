@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <title>RURALEX Knepp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.png">
+</head>
+
+<body>
+    <div class="page">
+        <!-- ===== Header ===== -->
+        <header>
+            <div class="container nav">
+                <div class="nav-left">
+                    <div class="nav-logo" aria-hidden="true">
+                        <a href="./index.html"> <img src="./imgs/logo-cropped.png" alt="RURALEX logo">
+                        </a>
+                    </div>
+                    <div class="nav-text">
+                    </div>
+                </div>
+
+                <!-- Hamburger button (visible at <= 1200px) -->
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+
+                <nav aria-label="Main navigation">
+                    <ul id="primary-nav" class="nav-links">
+                        <li><a href="./index.html#about">About</a></li>
+                        <li><a href="./index.html#case-studies">Case studies</a></li>
+                        <li><a href="./index.html#team">Team</a></li>
+                        <li><a href="./index.html#news">News</a></li>
+                        <li><a href="./index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Content below -->
+
+        <main>
+            <section class="post-hero">
+                <div class="container post-hero-inner">
+                    <div class="post-hero-meta">
+                        <div class="post-kicker">Case Study</div>
+                        <h1 class="post-title">Take part in research – share your personal experiences of Knepp!</h1>
+                        <div class="post-meta-line">
+                            <span>Added May 11, 2026</span>
+                        </div>
+                    </div>
+                    <figure class="post-hero-media">
+                        <!-- add link to image file and alt text below -->
+                        <img class="news-main-img" src="/imgs/coppice-sabin.jpg" alt="example image shows the same image of coppiced woodland as appears on the homepage">
+                        <figcaption>Caption for the main image, if needed.</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="post-body-section">
+                <div class="container post-layout">
+                    <!-- Main article -->
+                    <article class="post-body" aria-label="Blog post content">
+                        <blockquote class="post-pullquote">How do you really feel when you visit Knepp? What do the changing landscapes and species mean to you, personally?</blockquote>
+                        <p>
+                            We are researchers at the University of Sussex looking for people to take part in “experience walks” and interviews at Knepp in the first two weeks of June. 
+                            Our research aims to understand people’s experience of places like Knepp – how people feel when they encounter rewilding landscapes.
+                        </p>
+                        <h1>What are the aims of the study?</h1>
+                        <p>
+                            Rewilding is heralded as a powerful solution to address climate and biodiversity crises but it also has personal, social and cultural impacts, which are not yet well understood.</p> 
+                        <p>
+                            We are co-developing participatory and creative methods to understand how people are affected by changing landscapes and species. Successful environmental 
+                            decision-making must engage with social and cultural needs. So understanding people’s experiences of rewilding is important, but it has not yet been explored in detail.
+                            We are interested in how these changing environments are sensed and what they mean to different people.
+                        </p>
+                        <p>Our aim is to bring these subtle but powerful and important aspects of human experience into future decision making and management. For further information about the study,
+                            download the Participant Information Sheet (update with hyperlink when ready).</p>
+
+                        <h2>What does participation involve?</h2>
+                        <p>
+                            Participation is free and involves a guided walking interview at a convenient time for you between June 1st and June 12th 2026. There is then a short feedback survey, and optional focus group in July. 
+                        </p>
+                        <p>
+                            Your interview will last between 90 minutes and two hours. It is one-to-one with a researcher from the University of Sussex. During the interview, we discuss your relationship with Knepp 
+                            and explore how your experience of place is shaped by your perspective, perceptions and feelings. At one point, we also sit down to focus on a specific moment during the walk in more depth.
+                        </p>
+                        <p>
+                            After the interview, you’ll receive a feedback survey to complete online. You will then be invited to join a focus group with fellow participants. The focus group is an opportunity to chat
+                            about emerging themes from the research together, over tea and biscuits and explore potential co-creative outcomes (e.g. community mapping or archiving). 
+                        </p>
+                        <p>
+                            While there is no financial compensation for taking part in the study, we offer a complementary £15 voucher for Knepp Kitchen. Many people enjoy having time and space to reflect on their personal 
+                            connection with nature and ecological change!
+                        </p>
+                        <h2>Who can take part?</h2>
+                        <ul>
+                            <li>Visitors – you have previously visited Knepp or plan to visit before June 1st</li>
+                            <li>Staff and Volunteers – you work at Knepp in any capacity as an employee or volunteer or you have previously worked or volunteered at Knepp</li>
+                            <li>Local residents – you live beside, near or in the estate, or your place of work or residence is directly affected by activities at Knepp</li>
+                            <li>Decision makers – you represent an organization that is directly or indirectly connected with Knepp and/or the projects taking place there</li>
+                        </ul>
+                        <h2>How to sign up?</h2>
+                        <p>
+                            To book your interview time, complete the online form here: [.....]
+                        </p>
+                        <p>As this is a research project, the form asks for some information about you. There are also questions to check that we have given you enough information about the project so that you can make 
+                          an informed choice to participate.
+                        <p>
+                          We would be grateful for your insight, and we hope you may enjoy the opportunity to reflect on your lived experiences of rewilding in such a dynamic landscape.
+                        </p>
+                        <hr>
+                        <h3>Research team</h3>
+                          <p>Alice Eldridge, Principal Investigator<br>Professor of Sonic Systems, University of Sussex</p>
+                          <p>Lucy Sabin, Co-Investigator<br>Research Fellow in Conservation Humanities, University of Sussex</p>
+                          <p>For queries about the research or issues with signing up, email Lucy at ls763@sussex.ac.uk</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container footer-inner">
+                <div><a href="./index.html">Back to home</a></div>
+                <div>© <span id="year"></span> RURALEX</div>
+            </div>
+        </footer>
+
+    </div>
+    
+     <script>
+        // Footer year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Hamburger toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const primaryNav = document.getElementById('primary-nav');
+
+        navToggle.addEventListener('click', () => {
+            const isOpen = primaryNav.classList.toggle('nav-open');
+            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+    </script>
+</body>
+
+</html>
