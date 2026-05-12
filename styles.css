@@ -554,6 +554,9 @@ footer {
     box-shadow: 3px 3px #DCDCDC;
 }
 
+#kneppBtn:hover {
+    opacity: 0.5;
+}
 #knepp-cfp {
     background-color: white;
     padding: 2rem;
