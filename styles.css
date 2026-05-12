@@ -479,6 +479,8 @@ header {
 
 .post-body-section {
     padding-top: 1.4rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .post-hero {
@@ -561,6 +563,15 @@ footer {
     background-color: white;
     padding: 2rem;
     box-shadow: 5px 5px #DCDCDC;
+}
+
+@media (max-width: 768px) {
+    #knepp-cfp {
+        padding: 1rem;
+    }
+    #knepp-cfp h1 {
+        font-size: 2rem;
+    }
 }
 
 .knepp-cfp-pullquote {
