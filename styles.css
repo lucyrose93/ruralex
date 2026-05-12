@@ -583,3 +583,55 @@ footer {
     font-size: 1.1rem;
     margin: 0.8rem 0;
 }
+
+ .participants-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin: 0.3rem 0;
+    font-size: 0.98rem;
+    line-height: 1.5;
+  }
+
+  .participants-table th,
+  .participants-table td {
+    padding: 14px 16px;
+    border: 1px solid #d9d9d9;
+    vertical-align: top;
+    text-align: left;
+  }
+
+  .participants-table th {
+    background-color: #f4f6f4;
+    font-weight: 600;
+    width: 28%;
+    white-space: nowrap;
+  }
+
+  .participants-table tr:nth-child(even) td {
+    background-color: #fafafa;
+  }
+
+  .participants-table strong {
+    color: #2f4f2f;
+  }
+
+  @media (max-width: 700px) {
+    .participants-table,
+    .participants-table tbody,
+    .participants-table tr,
+    .participants-table td,
+    .participants-table th {
+      display: block;
+      width: 100%;
+    }
+
+    .participants-table tr {
+      margin-bottom: 1rem;
+      border: 1px solid #d9d9d9;
+    }
+
+    .participants-table th {
+      border-bottom: none;
+    }
+  }
