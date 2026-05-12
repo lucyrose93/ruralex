@@ -488,9 +488,9 @@ header {
 }
 
 .post-body h1 {
-    font-size: 2.2rem;
+    font-size: 2.15rem;
     line-height: 2.8rem;
-    font-weight: 530;
+    font-weight: 490;
     padding-top: 1rem;
 }
 
@@ -548,7 +548,7 @@ footer {
     font-size: 1.5rem;
     margin-left: 0.2rem;
     background-color: coral;
-    padding: 0.4rem 1.2rem;
+    padding: 0.5rem 1.9rem;
     color: white;
     margin-top: 2rem;
     margin-bottom: 2rem;
