@@ -574,6 +574,12 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    #walking-interview {
+            content: url("./imgs/walking-interview_mobile.jpg");
+    }
+}
+
 .knepp-cfp-pullquote {
     font-style: italic;
     border-left: 3px solid lightblue;
