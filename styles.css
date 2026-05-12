@@ -488,6 +488,7 @@ header {
 .post-body h2,
 .post-body h3 {
     padding-top: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 .post-body ul {
@@ -523,18 +524,30 @@ footer {
     flex-wrap: wrap;
 }
 
-/*Knepp sign up button*/
+/*Knepp CFP*/
 
 #kneppBtn {
-    font-size: 2rem;
-    background-color: white;
-    padding: 0.5rem;
-    color: blue;
+    font-size: 1.5rem;
+    margin-left: 0.2rem;
+    background-color: coral;
+    padding: 0.4rem 1.2rem;
+    color: white;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    border: none;
+    box-shadow: 3px 3px #DCDCDC;
 }
 
 #knepp-cfp {
     background-color: white;
     padding: 2rem;
+    box-shadow: 5px 5px #DCDCDC;
+}
+
+.knepp-cfp-questions {
+    border-left: 3px solid lightblue;
+    padding-left: 0.8rem;
+    padding-top: 0.5rem;
+    line-height: 1.8rem;
+    font-size: 1.1rem;
 }
