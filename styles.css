@@ -58,13 +58,12 @@ img {
 }
 
 section {
-    padding: 4rem 0;
+    padding: 3rem 0;
     border-top: 1px solid #e5e5e5;
 }
 
 .section-header {
-    padding-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .section-kicker {
@@ -242,65 +241,85 @@ header {
 
 /* ===== Hero ===== */
 
-
-.hero {
-    padding: 3.5rem 0 3rem;
-    background-color: #1e5f69;
-
-}
-
-.hero-layout {
-    display: grid;
-    gap: 1rem;
-    min-height: 70vh;
-}
-
-@media (min-width: 900px) {
-    .hero-layout {
-        grid-template-columns: 3fr 2fr;
-        align-items: center;
-    }
-}
-
 .hero-title {
-    font-size: clamp(2.2rem, 3vw + 1.6rem, 3.1rem);
     line-height: 1.2;
-    margin-bottom: 1.6rem;
-    font-weight: 300;
-    color: floralwhite;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 6rem;
+    letter-spacing: 8%;
 }
 
 .hero-lede {
-    /*        color: var(--muted);*/
-    color: floralwhite;
-    font-size: 1rem;
-    max-width: 34rem;
-    margin-bottom: 1rem;
-    margin-left: 0.3rem;
+    font-size: 1.1rem;
+    max-width: 90%;
+    margin: 0 auto 1rem;
 }
 
 .hero-tagline {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 0.8rem;
-    /*    color: var(--c2);*/
     color: #cde8eb;
     margin-bottom: 0.4rem;
-}
-
-.hero-meta {
-    margin-top: 1.2rem;
-    font-size: 0.9rem;
-    /*    color: var(--muted);*/
-    color: #cde8eb;
-    border-left: 3px solid var(--c3);
-    padding-left: 0.8rem;
 }
 
 .hero-visual {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hero {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+
+    background-image: url("./imgs/knepp-tree-sabin.jpg");
+    background-size: cover;
+    background-position: center;
+
+    background-attachment: fixed;
+}
+
+.hero-box {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+
+    width: min(800px, 90%);
+    padding: 2rem 0rem;
+    background: white;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 85vh;
+    }
+
+    .hero-image {
+        background-attachment: scroll;
+    }
+
+    .hero-box {
+        left: 50%;
+        bottom: 5%;
+        width: 90%;
+        padding: 1rem;
+        transform: translateX(-50%);
+    }
+    .hero-title {
+        font-size: 3rem;
+    }
+    .hero-lede {
+        font-size: 1rem;
+    }
 }
 
 /* ===== About ===== */
