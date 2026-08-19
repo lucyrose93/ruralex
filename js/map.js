@@ -60,14 +60,18 @@ const sites = [
 ];
 
 // Add markers
+const markers = {};
+
 sites.forEach(site => {
-    L.marker(site.coordinates)
+    const marker = L.marker(site.coordinates)
         .addTo(map)
         .bindPopup(`
             <h3>${site.name}</h3>
             <p>${site.description}</p>
             <a href="${site.link}">Explore →</a>
         `);
+
+    markers[site.name] = marker;
 });
 
 // Automatically fit the map to all research sites
@@ -81,7 +85,7 @@ map.setMinZoom(map.getZoom());
 
 function updateMapBounds() {
     if (window.matchMedia("(min-width: 1025px)").matches) {
-        map.setMaxBounds(bounds.pad(0.15));
+        map.setMaxBounds(bounds.pad(0.55));
         map.options.maxBoundsViscosity = 1.0;
     } else {
         map.setMaxBounds(null);
@@ -92,3 +96,26 @@ function updateMapBounds() {
 updateMapBounds();
 
 window.addEventListener("resize", updateMapBounds);
+
+document.querySelectorAll('.map-view-link').forEach(link => {
+    link.addEventListener('click', event => {
+        event.preventDefault();
+
+        const siteName = link.dataset.site;
+        const marker = markers[siteName];
+
+        if (!marker) return;
+
+        document.querySelector('#ruralex-map').scrollIntoView({
+            behavior: 'smooth'
+        });
+
+        setTimeout(() => {
+            map.flyTo(marker.getLatLng(), map.getZoom(), {
+                duration: 1
+            });
+
+            marker.openPopup();
+        }, 500);
+    });
+});
