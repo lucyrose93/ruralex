@@ -681,3 +681,21 @@ footer {
       border-bottom: none;
     }
   }
+
+/* ===== Research sites map ===== */
+
+.map-section {
+    padding: 0rem 0;
+}
+
+.map-header {
+    margin-bottom: 2rem;
+}
+
+#ruralex-map {
+    width: 100%;
+    height: 500px;
+}
+.map-view-link {
+    margin-left: 0.7rem;
+}
