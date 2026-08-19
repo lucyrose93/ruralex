@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="/imgs/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 </head>
 
 <body id="top">
@@ -53,7 +54,8 @@
                 <div class="hero-box">
                     <h1 class="hero-title">RURALEX</h1>
                     <p class="hero-lede">
-                        Welcome to RURALEX, a three-year research project exploring how <b>knowledge about the environment</b> is changing in <b>rural parts of Europe</b>, and how this shapes the social, economic, and ecological challenges faced by <b>local communities</b>.</div>
+                        Welcome to RURALEX, a three-year research project exploring how <b>knowledge about the environment</b> is changing in <b>rural parts of Europe</b>, and how this shapes the social, economic, and ecological challenges faced by <b>local communities</b>.
+                </div>
             </section>
 
             <!-- ===== About ===== -->
@@ -72,6 +74,12 @@
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <!--            Map-->
+
+            <section class="map-section">
+                <div id="ruralex-map"></div>
             </section>
 
             <!-- ===== Case Studies ===== -->
@@ -171,7 +179,7 @@
                 </div>
             </section>
 
-           
+
 
 
             <section id="news">
@@ -258,8 +266,8 @@
                     </div>
                 </div>
             </section>
-            
-             <!-- ===== Team ===== -->
+
+            <!-- ===== Team ===== -->
             <section id="team">
                 <div class="container">
                     <div class="section-header">
@@ -403,4 +411,6 @@
             navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
         });
     </script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="js/map.js"></script>
 </body></html>
