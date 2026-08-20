@@ -285,7 +285,7 @@ header {
 
     background-image: url("./imgs/home-boats.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
 
     background-attachment: fixed;
 }
@@ -306,6 +306,7 @@ header {
     }
 
     .hero-image {
+        background-image: url("./imgs/home-boats-mobile.jpg");
         background-attachment: scroll;
     }
 
