@@ -1,6 +1,6 @@
 /* ===== Colour palette ===== */
 :root {
-    --c1: #1e5f69;
+    --c1: brown;
     --c2: #2d96a5;
     --c3: #6ec3d2;
     --c4: #aadce1;
@@ -24,20 +24,20 @@ html {
 }
 
 body {
-    font-family: Trebuchet, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        sans-serif;
+    font-family: "Forum", serif;
     color: var(--text);
-    background: #F1EFE7;
     line-height: 1.6;
     color: #1e5f69;
 }
 
 a {
     color: var(--c1);
+    text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+    opacity: 0.7;
 }
 
 img {
@@ -76,7 +76,6 @@ section {
 
 .section-title {
     font-size: clamp(1.8rem, 2.3vw + 1rem, 2.6rem);
-    margin-bottom: 0.5rem;
     font-weight: 350;
 }
 
@@ -118,10 +117,10 @@ section {
 
 header {
     border-bottom: 1px solid #e0e0e0;
-    background: #ece9df;
+    background: #ffffff;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 1000;
 }
 
 .nav {
@@ -134,6 +133,7 @@ header {
 
 .nav a {
     text-decoration: none;
+    font-size: 1.1rem;
 }
 
 .nav-left {
@@ -241,18 +241,21 @@ header {
 
 /* ===== Hero ===== */
 
+/*
 .hero-title {
     line-height: 1.2;
     margin-bottom: 1rem;
     font-weight: 400;
-    font-size: 6rem;
+    font-size: 4rem;
     letter-spacing: 8%;
 }
+*/
 
 .hero-lede {
-    font-size: 1.1rem;
-    max-width: 90%;
-    margin: 0 auto 1rem;
+    font-size: 3rem;
+    line-height: 4rem;
+    max-width: 92%;
+    margin: 0 auto;
 }
 
 .hero-tagline {
@@ -273,29 +276,32 @@ header {
     position: relative;
     height: 70vh;
     overflow: hidden;
-    text-align: center;
+    /*    text-align: center;*/
+    color: white;
 }
 
 .hero-image {
     position: absolute;
     inset: 0;
 
-    background-image: url("./imgs/knepp-tree-sabin.jpg");
+    background-image: url("./imgs/home-boats.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
 
     background-attachment: fixed;
+    
+        animation: heroImageIn 1.4s ease-out both;
+
 }
 
 .hero-box {
     position: absolute;
     left: 50%;
-    bottom: 10%;
+    top: 10%;
     transform: translateX(-50%);
 
-    width: min(800px, 90%);
-    padding: 2rem 0rem;
-    background: white;
+    width: min(1400px, 90%);
+    /*    border: solid white 1px;*/
 }
 
 @media (max-width: 768px) {
@@ -304,21 +310,24 @@ header {
     }
 
     .hero-image {
+        background-image: url("./imgs/home-boats-mobile.jpg");
         background-attachment: scroll;
     }
 
     .hero-box {
         left: 50%;
-        bottom: 5%;
         width: 90%;
-        padding: 1rem;
         transform: translateX(-50%);
     }
+
+    /*
     .hero-title {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
+*/
     .hero-lede {
-        font-size: 1rem;
+        font-size: 2rem;
+        line-height: 2.7rem;
     }
 }
 
@@ -342,10 +351,6 @@ header {
 
 /* ===== Case Studies ===== */
 
-#case-studies {
-    background-color: #cde8eb;
-}
-
 .case-grid {
     display: grid;
     gap: 1.5rem;
@@ -364,11 +369,11 @@ header {
 }
 
 .case-card {
-    padding: 1rem;
+    padding: 1rem 0.8rem 1rem 1.4rem;
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
-    background: #ffffff;
+    border: 1px solid var(--border);
 }
 
 .case-title {
@@ -440,10 +445,6 @@ header {
 
 /* ===== News ===== */
 
-#news {
-    background-color: #cde8eb;
-}
-
 .news-list {
     display: flex;
     flex-direction: column;
@@ -457,7 +458,7 @@ header {
     width: 100%;
     max-width: 1600px;
     background: #ffffff;
-    
+
     display: grid;
     grid-template-columns: 250px 1fr;
     gap: 1.5rem;
@@ -504,7 +505,7 @@ header {
 
 .news-main-img {
     padding-top: 0.5rem;
-    width: 75%;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -519,12 +520,17 @@ header {
 
 .post-body-section {
     padding-top: 1.4rem;
-    max-width: 1000px;
     margin: 0 auto;
 }
 
 .post-hero {
     padding-bottom: 0;
+    margin: 0 auto;
+}
+
+.post-hero,
+.post-body-section {
+    max-width: 1200px;
 }
 
 .post-body h1 {
@@ -532,6 +538,10 @@ header {
     line-height: 2.8rem;
     font-weight: 490;
     padding-top: 1rem;
+}
+
+.post-body h3 {
+    font-size: 1.3rem;
 }
 
 .post-body h2,
@@ -599,6 +609,7 @@ footer {
 #kneppBtn:hover {
     opacity: 0.5;
 }
+
 #knepp-cfp {
     background-color: white;
     padding: 2rem;
@@ -609,6 +620,7 @@ footer {
     #knepp-cfp {
         padding: 1rem;
     }
+
     #knepp-cfp h1 {
         font-size: 2rem;
     }
@@ -616,7 +628,7 @@ footer {
 
 @media (max-width: 768px) {
     #walking-interview {
-            content: url("./imgs/walking-interview_mobile.jpg");
+        content: url("./imgs/walking-interview_mobile.jpg");
     }
 }
 
@@ -630,57 +642,57 @@ footer {
     margin: 0.8rem 0;
 }
 
- .participants-table {
+.participants-table {
     width: 100%;
     border-collapse: collapse;
-    font-family: Arial, sans-serif;
     margin: 0.3rem 0;
     font-size: 0.98rem;
     line-height: 1.5;
-  }
+}
 
-  .participants-table th,
-  .participants-table td {
+.participants-table th,
+.participants-table td {
     padding: 14px 16px;
     border: 1px solid #d9d9d9;
     vertical-align: top;
     text-align: left;
-  }
+}
 
-  .participants-table th {
+.participants-table th {
     background-color: #f4f6f4;
     font-weight: 600;
     width: 28%;
     white-space: nowrap;
-  }
+}
 
-  .participants-table tr:nth-child(even) td {
+.participants-table tr:nth-child(even) td {
     background-color: #fafafa;
-  }
+}
 
-  .participants-table strong {
+.participants-table strong {
     color: #2f4f2f;
-  }
+}
 
-  @media (max-width: 700px) {
+@media (max-width: 700px) {
+
     .participants-table,
     .participants-table tbody,
     .participants-table tr,
     .participants-table td,
     .participants-table th {
-      display: block;
-      width: 100%;
+        display: block;
+        width: 100%;
     }
 
     .participants-table tr {
-      margin-bottom: 1rem;
-      border: 1px solid #d9d9d9;
+        margin-bottom: 1rem;
+        border: 1px solid #d9d9d9;
     }
 
     .participants-table th {
-      border-bottom: none;
+        border-bottom: none;
     }
-  }
+}
 
 /* ===== Research sites map ===== */
 
@@ -694,8 +706,72 @@ footer {
 
 #ruralex-map {
     width: 100%;
-    height: 500px;
+    height: 650px;
 }
+
 .map-view-link {
     margin-left: 0.7rem;
+}
+
+.leaflet-popup-content,
+.leaflet-popup-content h3,
+.leaflet-popup-content p,
+.leaflet-popup-content a {
+    font-family: "Forum", serif;
+}
+
+.exit-case {
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+/* ==== Animations ==== */
+
+
+.hero-box {
+    animation: heroBoxIn 0.9s ease-out 0.3s both;
+}
+
+@keyframes heroBoxIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 20px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* === Scroll reveals === */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
 }

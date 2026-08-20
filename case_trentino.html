@@ -31,12 +31,12 @@
                 </button>
 
                 <nav aria-label="Main navigation">
-                    <ul id="primary-nav" class="nav-links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#case-studies">Case studies</a></li>
-                        <li><a href="#news">News</a></li>
-                        <li><a href="#team">Team</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                   <ul id="primary-nav" class="nav-links">
+                        <li><a href="./index.html#about">About</a></li>
+                        <li><a href="./index.html#case-studies">Case studies</a></li>
+                        <li><a href="./index.html#news">News</a></li>
+                        <li><a href="./index.html#team">Team</a></li>
+                        <li><a href="./index.html#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -56,7 +56,7 @@
                             <span>Added January 20, 2026</span>
                         </div>
                     </div>
-                    <figure class="post-hero-media">
+                    <figure class="post-hero-media reveal">
                         <!-- add link to image file and alt text below -->
                         <img class="news-main-img" src="/imgs/trentino-rippa.jpg" alt="deep shadowy valley" loading="lazy">
                         <figcaption>Fieldwork photography, Alessandro Rippa.</figcaption>
@@ -76,7 +76,7 @@
                         <p>
                             The local partner is the Vallarsa Ethnographic Museum: a small institution holding an archive of historical documents that organises volunteer-run public events related to the valley’s past. I will collaborate with the Vallarsa Ethnographic Museum in both research (working with local collections and the various knowledge holders that gravitate to the museum) and dissemination (through events in the valleys, their history, and future). </p>
 
-                        <h2>Extended description</h2>
+                        <h2>Context and impact</h2>
                         <p>
                             The two valleys at the centre of this study span approximately 168 square kilometres and are inhabited by around 3,500 residents who primarily live in villages situated along the lower slopes, at elevations between 600-800 metres. Shaped by the Leno River, the valleys reflect centuries of agricultural development, characterised by terraced fields extending down to the river's edge, while larch and pine forests rise to higher pastures starting at around 1,000 metres.
 
@@ -95,7 +95,10 @@
                         <p>
                             Abandonment, Rewilding, Rural Development, Alpine History, Depopulation
                         </p>
+
                     </article>
+                    
+                    <a href="./index.html"><p class="exit-case">← Exit case study</p></a>
 
 
                 </div>
@@ -110,20 +113,9 @@
         </footer>
 
     </div>
-    
-     <script>
-        // Footer year
-        document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Hamburger toggle
-        const navToggle = document.querySelector('.nav-toggle');
-        const primaryNav = document.getElementById('primary-nav');
+            <script src="js/main.js"></script>
 
-        navToggle.addEventListener('click', () => {
-            const isOpen = primaryNav.classList.toggle('nav-open');
-            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-        });
-    </script>
 </body>
 
 </html>

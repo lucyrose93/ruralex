@@ -34,8 +34,8 @@
                     <ul id="primary-nav" class="nav-links">
                         <li><a href="./index.html#about">About</a></li>
                         <li><a href="./index.html#case-studies">Case studies</a></li>
-                        <li><a href="./index.html#team">Team</a></li>
                         <li><a href="./index.html#news">News</a></li>
+                        <li><a href="./index.html#team">Team</a></li>
                         <li><a href="./index.html#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -56,12 +56,12 @@
                             <span>Added January 20, 2026</span>
                         </div>
                     </div>
-                    <figure class="post-hero-media">
+                    <figure class="post-hero-media reveal">
                         <!-- add link to image file and alt text below -->
                         <img class="news-main-img" src="/imgs/munkelva-neal.jpg" alt="standing in flowing water a man bends towards a bucket or receptacle" loading="lazy">
                         <figcaption>Fieldwork photography, Neal Cahoon.</figcaption>
                     </figure>
-                    <figure class="post-hero-media">
+                    <figure class="post-hero-media reveal">
                         <!-- add link to image file and alt text below -->
                         <img class="news-main-img" src="/imgs/karpelva-neal.jpg" alt="dead silver fish in three to four blue plastic bags left open on the ground" loading="lazy">
                         <figcaption>Fieldwork photography, Neal Cahoon.</figcaption>
@@ -80,7 +80,7 @@
                         <h2>Local partners and communities</h2>
                         <p>The independent curator Hilde Methi is the main project partner for this case-study, and our work together for RURALEX supports an ongoing collaboration that formed in 2017. Through diverse curatorial activities, the project involves workshops, exhibitions, events, and a reflective writing practice. The work contributes to programmes such as NIBIO Svanhovd’s Phenology of the North Calotte and Hilde’s own TRE TRE TRE and “Border Art Archive” initiatives, and it evolves through a curatorial practice that can help produce artworks and small-scale events in their local settings. This work also aims to “triangulate” with other places in order to encourage new ways of thinking and being when encountering the symptoms of rapid or unexpected ecological change. Throughout the project, Hilde and Neal will work together on the practical, organisational, and artistic developments.</p>
 
-                        <h2>Extended description</h2>
+                        <h2>Context and impact</h2>
                         <p>This case-study involves a series of curatorial engagements in the border areas in and around Sør-Varanger in Northern Norway and Sápmi. Through reflections on archival artworks from the past 35 years, as well as through contemporary artistic activities and educational initiatives, the project thinks through ideas of “knowledge” and “crisis” in a broader, relational sense in this region, taking what is happening with the invasive Pink Salmon as one entry point of investigation. Above all, the project attends to the value of curatorial practice as a means of discovering, revealing, and activating local knowledges about human-environment relations in their local settings.</p>
 
                         <p>The research asks the questions: what kind of role can small-scale curatorial projects of contemporary art play in relation to local knowledge? How can workshop formats and activities that facilitate exchanges between artists, local knowledge holders, and the environment help to keep local ways of knowing alive, while also generating new possibilities for thinking and being? And, how can organising and contributing to cultural and educational events, curating archival works and contemporary exhibitions, and publishing collections of speculative and reflective writing play societal roles when it comes to sharing the knowledges that may be valuable for a changing environment?</p>
@@ -91,6 +91,11 @@
                             Pink Salmon, Curatorial Practice, Phenology, Artistic Research, Contemporary Art, Borders.
                         </p>
                     </article>
+
+                    <a href="./index.html">
+                        <p class="exit-case">← Exit case study</p>
+                    </a>
+
 
 
                 </div>
@@ -105,20 +110,7 @@
         </footer>
 
     </div>
-    
-     <script>
-        // Footer year
-        document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Hamburger toggle
-        const navToggle = document.querySelector('.nav-toggle');
-        const primaryNav = document.getElementById('primary-nav');
+            <script src="js/main.js"></script>
 
-        navToggle.addEventListener('click', () => {
-            const isOpen = primaryNav.classList.toggle('nav-open');
-            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-        });
-    </script>
-</body>
-
-</html>
+</body></html>
