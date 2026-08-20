@@ -24,8 +24,7 @@ html {
 }
 
 body {
-    font-family: Trebuchet, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        sans-serif;
+    font-family: "Forum", serif;
     color: var(--text);
     background: #F1EFE7;
     line-height: 1.6;
@@ -633,7 +632,6 @@ footer {
  .participants-table {
     width: 100%;
     border-collapse: collapse;
-    font-family: Arial, sans-serif;
     margin: 0.3rem 0;
     font-size: 0.98rem;
     line-height: 1.5;
