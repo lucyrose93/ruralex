@@ -74,7 +74,6 @@ section {
 
 .section-title {
     font-size: clamp(1.8rem, 2.3vw + 1rem, 2.6rem);
-    margin-bottom: 0.5rem;
     font-weight: 350;
 }
 
@@ -239,18 +238,21 @@ header {
 
 /* ===== Hero ===== */
 
+/*
 .hero-title {
     line-height: 1.2;
     margin-bottom: 1rem;
     font-weight: 400;
-    font-size: 6rem;
+    font-size: 4rem;
     letter-spacing: 8%;
 }
+*/
 
 .hero-lede {
-    font-size: 1.1rem;
-    max-width: 90%;
-    margin: 0 auto 1rem;
+    font-size: 3rem;
+    line-height: 4rem;
+    max-width: 92%;
+    margin: 0 auto;
 }
 
 .hero-tagline {
@@ -269,9 +271,9 @@ header {
 
 .hero {
     position: relative;
-    height: 57vh;
+    height: 70vh;
     overflow: hidden;
-    text-align: center;
+/*    text-align: center;*/
     color: white;
 }
 
@@ -279,7 +281,7 @@ header {
     position: absolute;
     inset: 0;
 
-    background-image: url("./imgs/knepp-tree-sabin.jpg");
+    background-image: url("./imgs/home-boats.jpg");
     background-size: cover;
     background-position: center;
 
@@ -289,12 +291,11 @@ header {
 .hero-box {
     position: absolute;
     left: 50%;
-    bottom: 20%;
+    top: 10%;
     transform: translateX(-50%);
 
-    width: min(800px, 90%);
-    padding: 2rem 0rem;
-    border: solid white 1px;
+    width: min(1400px, 90%);
+/*    border: solid white 1px;*/
 }
 
 @media (max-width: 768px) {
@@ -308,16 +309,17 @@ header {
 
     .hero-box {
         left: 50%;
-        bottom: 5%;
         width: 90%;
-        padding: 1rem;
         transform: translateX(-50%);
     }
+/*
     .hero-title {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
+*/
     .hero-lede {
-        font-size: 1rem;
+        font-size: 2rem;
+        line-height: 2.7rem;
     }
 }
 
@@ -688,11 +690,10 @@ footer {
 
 #ruralex-map {
     width: 100%;
-    height: 700px;
+    height: 650px;
 }
 .map-view-link {
     margin-left: 0.7rem;
-    font-size: 1.2rem
 }
 .leaflet-popup-content,
 .leaflet-popup-content h3,
