@@ -1,6 +1,6 @@
 /* ===== Colour palette ===== */
 :root {
-    --c1: #1e5f69;
+    --c1: brown;
     --c2: #2d96a5;
     --c3: #6ec3d2;
     --c4: #aadce1;
@@ -32,6 +32,7 @@ body {
 
 a {
     color: var(--c1);
+    text-decoration: none;
 }
 
 a:hover {
@@ -131,6 +132,7 @@ header {
 
 .nav a {
     text-decoration: none;
+    font-size: 1.1rem;
 }
 
 .nav-left {
@@ -273,7 +275,7 @@ header {
     position: relative;
     height: 70vh;
     overflow: hidden;
-/*    text-align: center;*/
+    /*    text-align: center;*/
     color: white;
 }
 
@@ -295,7 +297,7 @@ header {
     transform: translateX(-50%);
 
     width: min(1400px, 90%);
-/*    border: solid white 1px;*/
+    /*    border: solid white 1px;*/
 }
 
 @media (max-width: 768px) {
@@ -312,7 +314,8 @@ header {
         width: 90%;
         transform: translateX(-50%);
     }
-/*
+
+    /*
     .hero-title {
         font-size: 2.5rem;
     }
@@ -450,7 +453,7 @@ header {
     width: 100%;
     max-width: 1600px;
     background: #ffffff;
-    
+
     display: grid;
     grid-template-columns: 250px 1fr;
     gap: 1.5rem;
@@ -520,7 +523,8 @@ header {
     margin: 0 auto;
 }
 
-.post-hero, .post-body-section {
+.post-hero,
+.post-body-section {
     max-width: 1200px;
 }
 
@@ -529,6 +533,10 @@ header {
     line-height: 2.8rem;
     font-weight: 490;
     padding-top: 1rem;
+}
+
+.post-body h3 {
+    font-size: 1.3rem;
 }
 
 .post-body h2,
@@ -596,6 +604,7 @@ footer {
 #kneppBtn:hover {
     opacity: 0.5;
 }
+
 #knepp-cfp {
     background-color: white;
     padding: 2rem;
@@ -606,6 +615,7 @@ footer {
     #knepp-cfp {
         padding: 1rem;
     }
+
     #knepp-cfp h1 {
         font-size: 2rem;
     }
@@ -613,7 +623,7 @@ footer {
 
 @media (max-width: 768px) {
     #walking-interview {
-            content: url("./imgs/walking-interview_mobile.jpg");
+        content: url("./imgs/walking-interview_mobile.jpg");
     }
 }
 
@@ -627,56 +637,57 @@ footer {
     margin: 0.8rem 0;
 }
 
- .participants-table {
+.participants-table {
     width: 100%;
     border-collapse: collapse;
     margin: 0.3rem 0;
     font-size: 0.98rem;
     line-height: 1.5;
-  }
+}
 
-  .participants-table th,
-  .participants-table td {
+.participants-table th,
+.participants-table td {
     padding: 14px 16px;
     border: 1px solid #d9d9d9;
     vertical-align: top;
     text-align: left;
-  }
+}
 
-  .participants-table th {
+.participants-table th {
     background-color: #f4f6f4;
     font-weight: 600;
     width: 28%;
     white-space: nowrap;
-  }
+}
 
-  .participants-table tr:nth-child(even) td {
+.participants-table tr:nth-child(even) td {
     background-color: #fafafa;
-  }
+}
 
-  .participants-table strong {
+.participants-table strong {
     color: #2f4f2f;
-  }
+}
 
-  @media (max-width: 700px) {
+@media (max-width: 700px) {
+
     .participants-table,
     .participants-table tbody,
     .participants-table tr,
     .participants-table td,
     .participants-table th {
-      display: block;
-      width: 100%;
+        display: block;
+        width: 100%;
     }
 
     .participants-table tr {
-      margin-bottom: 1rem;
-      border: 1px solid #d9d9d9;
+        margin-bottom: 1rem;
+        border: 1px solid #d9d9d9;
     }
 
     .participants-table th {
-      border-bottom: none;
+        border-bottom: none;
     }
-  }
+}
 
 /* ===== Research sites map ===== */
 
@@ -692,12 +703,20 @@ footer {
     width: 100%;
     height: 650px;
 }
+
 .map-view-link {
     margin-left: 0.7rem;
 }
+
 .leaflet-popup-content,
 .leaflet-popup-content h3,
 .leaflet-popup-content p,
 .leaflet-popup-content a {
     font-family: "Forum", serif;
+}
+
+.exit-case {
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
