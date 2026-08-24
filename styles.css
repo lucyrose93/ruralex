@@ -510,16 +510,6 @@ header {
     width: 100%;
 }
 
-@media (max-width: 768px) {
-    .news-post {
-        width: 90%;
-    }
-
-    .news-main-img {
-        width: 100%;
-    }
-}
-
 .post-body-section {
     padding-top: 1.4rem;
     margin: 0 auto;
