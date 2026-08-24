@@ -12,7 +12,7 @@ const sites = [
     {
         name: "Catalan Pyrenees, Northeast Spain",
         coordinates: [42.45, 1.75],
-        description: "Bureaucratic forest management marginalizes traditional knowledge. As climate change raises the threat of megafires, this project uses ethnographic fieldwork to explore and identify alternative ways to build fire-resilient landscapes and communities.",
+        description: "As climate change raises the threat of megafires, this project uses ethnographic fieldwork to explore and identify alternative ways to build fire-resilient landscapes and communities, bringing traditional knowledges into conversation with forest management. ",
         link: "case_pyrenees.html"
     },
     {
